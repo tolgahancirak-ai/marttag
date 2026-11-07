@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6f1" />
+    <title>Epgyt Market — إدارة المتجر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <div class="announcement" data-i18n="announcement"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span class="brand-name" data-store-name>Epgyt Market</span>
+      </a>
+      <div class="header-actions">
+        <a class="back-to-shop" href="index.html" data-i18n="shopLink"></a>
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel"></span>
+          <select id="language-select" aria-label="Language">
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+    </header>
+    <main class="admin-main">
+      <div class="section-heading admin-title">
+        <div><span class="section-kicker" data-i18n="dashboardKicker"></span><h1 data-i18n="dashboardTitle"></h1></div>
+        <div class="admin-tools">
+          <button class="secondary-button" id="refresh-orders" type="button" data-i18n="refresh"></button>
+          <button class="secondary-button" id="admin-logout" type="button" data-i18n="logout" hidden></button>
+        </div>
+      </div>
+      <section class="admin-auth" id="admin-auth">
+        <form id="admin-login">
+          <label class="form-field"><span data-i18n="adminToken"></span><input id="admin-token" type="password" autocomplete="current-password" required /></label>
+          <button class="primary-button" type="submit" data-i18n="signIn"></button>
+        </form>
+        <p data-i18n="tokenHelp"></p>
+      </section>
+      <p class="admin-message" id="admin-message" role="status" aria-live="polite"></p>
+      <section class="orders-section" id="orders-section" hidden>
+        <div class="order-summary" id="order-summary"></div>
+        <div class="orders-list" id="orders-list"></div>
+      </section>
+      <p class="admin-security-note" data-i18n="privacyNote"></p>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name" data-store-name>Epgyt Market</span></a>
+      <p data-i18n="adminFooter"></p>
+      <span>© <span id="year"></span> <span data-store-name>Epgyt Market</span></span>
+    </footer>
+  </body>
+</html>

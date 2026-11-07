@@ -1,0 +1,146 @@
+[
+  {
+    "id": "ceramic-vase",
+    "category": "home",
+    "price": 680,
+    "rating": "4.9",
+    "badge": "popular",
+    "image": "photo-1578500494198-246f612d3b3d",
+    "name": {
+      "ar": "مزهرية سيراميك يدوية",
+      "tr": "El Yapımı Seramik Vazo",
+      "en": "Handmade Ceramic Vase"
+    },
+    "category_name": {
+      "ar": "المنزل",
+      "tr": "Ev & Yaşam",
+      "en": "Home"
+    }
+  },
+  {
+    "id": "woven-bag",
+    "category": "accessories",
+    "price": 950,
+    "rating": "4.8",
+    "badge": "new",
+    "image": "photo-1590874103328-eac38a683ce7",
+    "name": {
+      "ar": "حقيبة يد منسوجة",
+      "tr": "Hasır Günlük Çanta",
+      "en": "Woven Everyday Tote"
+    },
+    "category_name": {
+      "ar": "إكسسوارات",
+      "tr": "Aksesuar",
+      "en": "Accessories"
+    }
+  },
+  {
+    "id": "linen-shirt",
+    "category": "fashion",
+    "price": 1250,
+    "rating": "4.9",
+    "badge": "",
+    "image": "photo-1598033129183-c4f50c736f10",
+    "name": {
+      "ar": "قميص كتان ناعم",
+      "tr": "Yumuşak Keten Gömlek",
+      "en": "Soft Linen Shirt"
+    },
+    "category_name": {
+      "ar": "أزياء",
+      "tr": "Moda",
+      "en": "Fashion"
+    }
+  },
+  {
+    "id": "face-oil",
+    "category": "beauty",
+    "price": 540,
+    "rating": "4.7",
+    "badge": "new",
+    "image": "photo-1608248543803-ba4f8c70ae0b",
+    "name": {
+      "ar": "زيت وجه نباتي",
+      "tr": "Bitkisel Yüz Yağı",
+      "en": "Botanical Face Oil"
+    },
+    "category_name": {
+      "ar": "عناية وجمال",
+      "tr": "Bakım & Güzellik",
+      "en": "Beauty"
+    }
+  },
+  {
+    "id": "woven-bowl",
+    "category": "home",
+    "price": 420,
+    "rating": "4.8",
+    "badge": "",
+    "image": "photo-1490312278390-ab64016e0aa9",
+    "name": {
+      "ar": "وعاء من سعف النخيل",
+      "tr": "Palmiye Örgü Kase",
+      "en": "Palm-Woven Catchall"
+    },
+    "category_name": {
+      "ar": "المنزل",
+      "tr": "Ev & Yaşam",
+      "en": "Home"
+    }
+  },
+  {
+    "id": "gold-earrings",
+    "category": "accessories",
+    "price": 780,
+    "rating": "4.9",
+    "badge": "popular",
+    "image": "photo-1535632066927-ab7c9ab60908",
+    "name": {
+      "ar": "أقراط نحاسية منحوتة",
+      "tr": "Şekilli Pirinç Küpe",
+      "en": "Sculpted Brass Hoops"
+    },
+    "category_name": {
+      "ar": "إكسسوارات",
+      "tr": "Aksesuar",
+      "en": "Accessories"
+    }
+  },
+  {
+    "id": "cotton-shirt",
+    "category": "fashion",
+    "price": 890,
+    "rating": "4.6",
+    "badge": "",
+    "image": "photo-1521572163474-6864f9cf17ab",
+    "name": {
+      "ar": "قميص قطني يومي",
+      "tr": "Günlük Pamuklu Tişört",
+      "en": "Everyday Cotton Tee"
+    },
+    "category_name": {
+      "ar": "أزياء",
+      "tr": "Moda",
+      "en": "Fashion"
+    }
+  },
+  {
+    "id": "body-butter",
+    "category": "beauty",
+    "price": 460,
+    "rating": "4.8",
+    "badge": "popular",
+    "image": "photo-1608248543803-ba4f8c70ae0b",
+    "name": {
+      "ar": "بلسم مغذٍ للجسم",
+      "tr": "Besleyici Vücut Balmı",
+      "en": "Nourishing Body Balm"
+    },
+    "category_name": {
+      "ar": "عناية وجمال",
+      "tr": "Bakım & Güzellik",
+      "en": "Beauty"
+    }
+  }
+]

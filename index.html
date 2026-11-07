@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Epgyt Market — local finds across Egypt. Cash on delivery."
+    />
+    <meta name="theme-color" content="#f7f6f1" />
+    <title>Epgyt Market — اكتشف اختياراتك</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement" data-i18n="announcement"></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Epgyt Market">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span class="brand-name" data-store-name>Epgyt Market</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop" data-i18n="navShop"></a>
+        <a href="#shop" data-i18n="navNew"></a>
+        <a href="#shop" data-i18n="navOffers"></a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel"></span>
+          <select id="language-select" aria-label="Language">
+            <option value="ar" selected>العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+        <button class="icon-button cart-trigger" id="cart-open" type="button" aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow"></span></span>
+          <h1 data-i18n="heroTitle"></h1>
+          <p data-i18n="heroBody"></p>
+          <a class="primary-button" href="#shop"><span data-i18n="heroCta"></span><span aria-hidden="true">↗</span></a>
+          <div class="hero-footnote"><span class="trust-icon">✓</span><span data-i18n="heroNote"></span></div>
+        </div>
+        <div class="hero-art">
+          <img
+            src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+            alt="A warm, sunlit collection of home decor"
+          />
+          <div class="hero-sticker"><span data-i18n="stickerTop"></span><strong data-i18n="stickerBottom"></strong></div>
+          <div class="hero-caption"><span class="caption-dot"></span><span data-i18n="heroCaption"></span></div>
+        </div>
+        <span class="hero-index">01 <span>/</span> 03</span>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker" data-i18n="sectionKicker"></span>
+            <h2 data-i18n="sectionTitle"></h2>
+          </div>
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="search-input" type="search" data-i18n-placeholder="searchPlaceholder" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <div class="category-row" id="category-list" aria-label="Product categories"></div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="local-note">
+        <div class="local-icon" aria-hidden="true">م</div>
+        <div>
+          <h2 data-i18n="localTitle"></h2>
+          <p data-i18n="localBody"></p>
+        </div>
+        <span class="local-arrow" aria-hidden="true">↙</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name" data-store-name>Epgyt Market</span></a>
+      <p data-i18n="footerNote"></p>
+      <div class="footer-meta">
+        <a id="whatsapp-link" href="https://wa.me/201031780616" target="_blank" rel="noopener noreferrer"><span data-i18n="contactUs"></span> <bdi data-store-phone>+20 103 178 0616</bdi></a>
+        <a href="privacy.html" data-i18n="privacyLink"></a>
+        <a href="admin.html" data-i18n="adminLink"></a>
+        <span>© <span id="year"></span> <span data-store-name>Epgyt Market</span></span>
+      </div>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-heading">
+        <div><span class="section-kicker" data-i18n="bagKicker"></span><h2 data-i18n="bagTitle"></h2></div>
+        <button class="icon-button close-drawer" id="cart-close" type="button" aria-label="Close shopping bag">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-summary">
+        <div class="summary-row"><span data-i18n="subtotal"></span><strong id="cart-subtotal"></strong></div>
+        <div class="summary-row"><span data-i18n="deliveryFee"></span><strong id="cart-delivery"></strong></div>
+        <div class="summary-row summary-total"><span data-i18n="orderTotal"></span><strong id="cart-total"></strong></div>
+        <p data-i18n="shippingNote"></p>
+        <p class="checkout-notice" id="checkout-notice" role="status" hidden></p>
+        <button class="primary-button checkout-button" id="checkout-button" type="button" disabled><span data-i18n="checkout"></span><span aria-hidden="true">↗</span></button>
+      </div>
+    </aside>
+    <div class="checkout-backdrop" id="checkout-backdrop"></div>
+    <section class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+      <div class="checkout-heading">
+        <div><span class="section-kicker" data-i18n="checkoutKicker"></span><h2 id="checkout-title" data-i18n="checkoutTitle"></h2></div>
+        <button class="icon-button" id="checkout-close" type="button" aria-label="Close checkout">×</button>
+      </div>
+      <form id="checkout-form">
+        <label class="form-field"><span data-i18n="customerName"></span><input name="name" autocomplete="name" required /></label>
+        <label class="form-field"><span data-i18n="customerPhone"></span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="(?:\+20|0020|0)?1[0125][0-9]{8}" data-i18n-placeholder="phonePlaceholder" required /></label>
+        <label class="form-field"><span data-i18n="governorate"></span><select name="governorate" id="governorate-select" required></select></label>
+        <label class="form-field"><span data-i18n="customerAddress"></span><textarea name="address" autocomplete="street-address" rows="2" required></textarea></label>
+        <label class="privacy-consent"><input name="privacy_consent" type="checkbox" value="accepted" required /><span><span data-i18n="privacyConsent"></span> <a href="privacy.html" target="_blank" rel="noopener noreferrer" data-i18n="privacyLink"></a></span></label>
+        <fieldset class="payment-choice">
+          <legend data-i18n="paymentMethod"></legend>
+          <label><input type="radio" name="payment" value="cod" checked /><span><strong data-i18n="codTitle"></strong><small data-i18n="codNote"></small></span><span class="cod-check" aria-hidden="true">✓</span></label>
+        </fieldset>
+        <div class="checkout-total"><span data-i18n="orderTotal"></span><strong id="checkout-total"></strong></div>
+        <p class="checkout-disclaimer" data-i18n="checkoutDisclaimer"></p>
+        <p class="checkout-result" id="checkout-result" role="status" aria-live="polite" hidden></p>
+        <button class="primary-button checkout-button" id="place-order-button" type="submit" disabled><span data-i18n="placeOrder"></span><span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

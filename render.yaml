@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: epgyt-market
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements-web.txt
+    startCommand: gunicorn --workers 2 --threads 4 --timeout 30 --bind 0.0.0.0:$PORT server:app
+    healthCheckPath: /healthz
+    disk:
+      name: epgyt-market-orders
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NILEMARKET_DATABASE
+        value: /var/data/orders.sqlite3
+      - key: NILEMARKET_DELIVERY_FEE_EGP
+        value: "55"
+      - key: NILEMARKET_ADMIN_TOKEN
+        generateValue: true
+      - key: STORE_NAME
+        value: Epgyt Market
+      - key: STORE_PHONE
+        value: "+201031780616"
+      - key: STORE_DOMAIN
+        value: egcart.com
